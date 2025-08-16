@@ -1,0 +1,137 @@
+.about {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.description {
+    margin-top: 1.5rem;
+    font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    padding: 1rem;
+    background-color: #232332;
+    border: 1px solid #353546;
+    width: 60%;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #A5ADC8;
+    line-height: 1.5;
+    font-size: 17px;
+    height: fit-content + 20px;
+    transition: 0.5s;
+}
+
+.description:hover {
+    box-shadow: 0px 0px 5px #CBA4F7;
+    transition: 0.5s;
+}
+
+.uses {
+    margin-top: 1.5rem;
+    font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    padding: 1rem;
+    background-color: #232332;
+    border: 1px solid #353546;
+    width: 30%;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #A5ADC8;
+    line-height: 1.5;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.uses:hover {
+    box-shadow: 0px 0px 5px #CBA4F7;
+    transition: 0.5s;
+}
+
+.usesTitle {
+    padding-top: 16px;
+    padding-bottom: 5px;
+    margin: 0;
+    color: #CBA5F7;
+}
+
+.usesItems {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.usesItem:hover{
+    width: 56px;
+    transition: 0.5s;
+}
+
+.usesItem {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.title {
+    font-weight: 600;
+    color: #F9E2AF;
+}
+
+.lol {
+    font-weight: 600;
+    color: #F5C2E7;
+}
+
+.status {
+    margin-top: 10%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discord {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.discord svg {
+    color: #89B4F9;
+}
+
+.discordText {
+    margin: 0;
+    padding: 0;
+}
+
+.spotify {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spotify svg {
+    color: #3FB883;
+}
+
+.spotifyText {
+    margin: 0;
+    padding: 0;
+}
+
+.songName {
+    color: #3FB883;
+}
+
+@media (max-width: 768px) {
+    .about {
+        width: 100%;
+        flex-direction: column; /* Mobil cihazlarda öğeleri dikey olarak sıralar */
+        gap: 1rem;
+    }
+    .description, .uses {
+        width: 90%;
+        flex-basis: auto;
+    }
+}

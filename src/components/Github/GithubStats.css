@@ -1,0 +1,44 @@
+.githubStats {
+    display: flex;
+    flex-direction: column;
+}
+
+.githubDetails {
+    font-size: 11px;
+    color: #A4ADC8;
+    padding: 1rem;
+    display: flex;
+    border: 1px solid #353546;
+    gap: 1rem;
+    justify-content: center;
+    max-height: fit-content;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.githubDetails img {
+    width: 128px;
+    height: 128px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.githubTitle {
+    color: #CBA4F7;
+}
+
+@media (max-width: 768px ) {
+    .githubDetails {
+        align-items: center;
+        justify-content: center;
+    }
+    .stats {
+        align-items: center;
+        justify-content: center;
+    }
+}

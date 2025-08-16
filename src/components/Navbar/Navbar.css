@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98.6%;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 2px;
+}
+
+.erenMentes {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #89B4F9;
+  font-size: 20px;
+}
+
+.erenmentes-com {
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+
+.links {
+  margin-left: auto;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.links svg {
+  color: gray;
+  width: 24px;
+  height: 24px;
+  transition: 0.2s;
+}
+
+.linkItem {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 25%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 10%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkItem:hover svg {
+  transition: 0.2s;
+  color: #CBA5F7;
+}
+
+.eren {
+  color: #CBA5F7;
+}
+
+.avatarImage img {
+  border: 2px solid gray;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+/* Responsive kurallar */
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Öğeleri dikey olarak sıralar */
+    gap: 1rem; /* Öğeler arasına boşluk ekler */
+  }
+
+  .names {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    margin-left: 0; /* Otomatik sol boşluğu kaldırır */
+    justify-content: center; /* Linkleri ortalar */
+    gap: 1rem;
+    flex-wrap: wrap; /* Gerekirse linkleri yeni satıra geçirir */
+  }
+}

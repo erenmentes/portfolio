@@ -1,0 +1,72 @@
+.repository {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.repositoryDetails {
+    display: block; /* a etiketi olduğu için block olmalı */
+    text-decoration: none;
+    color: white;
+    max-width: 450px;
+    min-width: 450px;
+    border: 1px solid rgba(97,97,97,0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #232332;
+    font-family: "Roboto Mono", monospace;
+    box-sizing: border-box;
+}
+
+.repositoryDetails:hover {
+    border: 1px solid rgba(145, 145, 145, 0.5);
+}
+
+.repositoryTitle {
+    font-size: 16px;
+}
+
+.repositoryDescription {
+    color: #A4ADC8;
+    font-size: 12px;
+}
+
+.repositoryDate {
+    font-size: 12px;
+}
+
+.repository a.aTag {
+    color: white;
+    display: block; /* inline-block yerine block */
+    text-decoration: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* padding/border dahil genişlik */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets) */
+@media (max-width: 768px) {
+    .repositoryDetails {
+        max-width: 100%; /* Allow it to take full width */
+        min-width: unset; /* Remove min-width constraint */
+        width: 100%; /* Ensure it takes full available width */
+    }
+}
+
+/* For screens smaller than 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .repositoryDetails {
+        padding: 0.8rem; /* Slightly reduce padding for smaller screens */
+    }
+
+    .repositoryTitle {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .repositoryDescription,
+    .repositoryDate {
+        font-size: 11px; /* Adjust font size for smaller screens */
+    }
+}
